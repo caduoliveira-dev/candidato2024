@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    margin-top: 80px;
+}
+
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    background-color: #276ea3;
+    color: #FFF;
+}
+
+.changeStyle{
+    height: 60px;
+}
+
+.navbar .logo-tipo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: 900;
+    margin-left: 2rem;
+}
+
+.navbar .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20rem;
+    list-style-type: none;
+}
+
+.navbar .menu li{
+    font-size: 2vh;
+    margin-right: 2rem;
+}
+
+.navbar a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar a li{
+    color: #FFF;
+    position: relative;
+}
+
+.navbar a li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #68a74c;
+    color: #FFF;
+    height: 500px;
+}
+
+.bom-de-servico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.teste{
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.bom-de-servico h1{
+    color: #276ea3;
+    margin-bottom: 0.5rem;
+}
+
+.bom-de-servico i{
+    color: #276ea3;
+    font-size: 2rem;
+}
+
+.subtitulo{
+    color: #276ea3;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.subtitulo2{
+    color: #FFF;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.servicos{
+    text-align: justify;
+    color: #276ea3;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.noticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #68a74c;
+    color: #FFF;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.teste1{
+    align-items: center;
+    justify-content: center;
+}
+
+.noticias .teste1 i{
+    font-size: 2rem;
+}
+
+.noticias h1{
+    margin-bottom: 0.5rem;
+}
+
+.noticias .cards{
+    display: inline-flex;
+    width: 60%;
+}
+
+.noticias .cards .card img{
+    width: 200px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.noticias .cards .card{
+    background-color: #276ea3;
+    color: #FFF;
+    text-align: justify;
+    font-weight: 500;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-right: 1rem;
+}
+
+.noticias .cards .card p{
+    margin-top: 0.5rem;
+}
+
+.noticias .cards .card span{
+    display: block;
+    border: 1px solid;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    margin-top: 5rem;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.fotos h1{
+    color: #276ea3;
+    margin-bottom: 0.5rem;
+}
+
+.fotos .teste i{
+    color: #276ea3;
+    font-size: 2rem;
+}
+
+.agenda{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #68a74c;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda h1{
+    margin-bottom: 1rem;
+}
+
+.agenda i{
+    font-size: 2rem;
+}
+
+.compromisso{
+    display: flex;
+}
+
+.compromisso p{
+    font-weight: 500;
+    color: #0f334e;
+    margin-left: 4rem;
+}
+
+.compromisso span{
+    display: flex;
+}
+
+.compromisso .dia{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.compromisso .data .mes-hora{
+    font-weight: 500;
+    margin-left: 0.9rem;
+}
+
+.videos{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: #276ea3;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos h1{
+    margin-bottom: 1rem;
+}
+
+.videos i{
+    font-size: 2rem;
+}
+
+.voluntario{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #68a74c;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.voluntario h1{
+    margin-bottom: 1rem;
+}
+
+.voluntario i{
+    font-size: 2rem;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: #276ea3;
+    justify-content: center;
+    align-items: center;
+}
+.cabeca{
+    text-align: center;
+}
+.container h1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container i{
+    font-size: 2rem;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #276ea3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type=submit]:hover {
+    background-color: #0f334e;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.redes{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: #68a74c;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes h1{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bi{
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.bia{
+    font-size: 2rem;
+}
+
+.footer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #276ea3;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span{
+    color: #0f334e;
+}
